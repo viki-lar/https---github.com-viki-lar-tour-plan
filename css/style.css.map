@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;CAAG;;AAC7B,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;CAAG",
+    "sources": [
+        "../saas/style.sass",
+        "../saas/_var.sass",
+        "../saas/_setting.sass",
+        "../saas/blocks/_header.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
