@@ -428,6 +428,11 @@ template {
   height: 40px;
 }
 
+.search:hover {
+  -webkit-box-shadow: 0 5px 5px black;
+          box-shadow: 0 5px 5px black;
+}
+
 .search__input {
   width: 350px;
   height: 100%;
@@ -448,6 +453,7 @@ template {
   height: 100%;
   border: none;
   background-color: primary;
+  cursor: pointer;
 }
 
 .user {
