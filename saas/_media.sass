@@ -21,6 +21,27 @@
                 line-height: 15px
     .logo
         width: 132px
+@media(min-width: 992px)
+    .search
+        &__button
+            &:hover
+                box-shadow: 2px 2px 2px 0 $primary
+    .user
+        &__name
+            &:hover
+                color: $primary
+    .navbar
+        &-menu
+            &__link
+                &:hover
+                    text-decoration: underline
+
+    .breadcrumb
+        &-list
+            &__link
+                &:hover
+                    text-decoration: underline
+
 @media ( max-width:768px )
     .container
         max-width: 576px

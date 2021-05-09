@@ -426,12 +426,12 @@ template {
   position: relative;
   overflow: hidden;
   border-radius: 6px;
-  height: 40px;
+  height: 45px;
 }
 
 .search__input {
   width: 350px;
-  height: 100%;
+  height: 40px;
   padding-left: 23px;
   padding-right: 75px;
   background-color: #F5FAFE;
@@ -446,16 +446,13 @@ template {
   top: 0;
   right: 0;
   width: 65px;
-  height: 100%;
+  height: 40px;
   border: none;
   background-color: primary;
   cursor: pointer;
   padding: 0px;
-}
-
-.search__button:hover {
-  -webkit-box-shadow: 0 5px 5px #a71b1b;
-          box-shadow: 0 5px 5px #a71b1b;
+  margin-right: 2px;
+  z-index: 5;
 }
 
 .user {
@@ -596,6 +593,11 @@ template {
   line-height: 18px;
 }
 
+.rating__counter-all {
+  font-size: 10px;
+  line-height: 13px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -625,6 +627,22 @@ template {
   }
   .logo {
     width: 132px;
+  }
+}
+
+@media (min-width: 992px) {
+  .search__button:hover {
+    -webkit-box-shadow: 2px 2px 2px 0 #EC1F46;
+            box-shadow: 2px 2px 2px 0 #EC1F46;
+  }
+  .user__name:hover {
+    color: #EC1F46;
+  }
+  .navbar-menu__link:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb-list__link:hover {
+    text-decoration: underline;
   }
 }
 
