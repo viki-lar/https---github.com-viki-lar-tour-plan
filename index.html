@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -105,9 +106,31 @@
                 </div>
                 <!-- /.hotel-info__right -->
             </div>
+
+            <div class="slider">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./img/slide1.jpg" alt="Изображение отеля"></div>
+                        <div class="swiper-slide"><img src="./img/slide2.jpg" alt="Изображение отеля"></div>
+                        <div class="swiper-slide"><img src="./img/slide3.jpg" alt="Изображение отеля"></div>
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <button class="slider-button slider-button__prev"></button>
+                    <button class="slider-button slider-button__next"></button>
+
+
+                </div>
+            </div>
         </div>
     </section>
     <!-- /.hotel -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
