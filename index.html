@@ -13,6 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+    <!--
+            Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+            Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+        -->
+
+
+    <script src="search_control_ppo.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<c298998a-7cbe-4644-a498-a850638ef082"
+        type="text/javascript"></script>
+    <script src="icon_customImage.js" type="text/javascript"></script>
+    <style>
+        html,
+        body,
+        #map {
+            width: 100%;
+
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -168,10 +190,7 @@
                         <!-- /.booking__info -->
                     </div>
                     <!-- /.booking -->
-                    <div class="map"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372593.602123192!2d100.74816275311755!3d12.403651366567123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1620755364075!5m2!1sru!2sru"
-                            width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+                    <div id="map" class="map"></div>
                     <!-- /.map -->
                 </div>
 
@@ -181,6 +200,7 @@
     </section>
     <!-- /.hotel -->
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/map.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
