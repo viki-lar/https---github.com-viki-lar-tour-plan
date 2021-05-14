@@ -1,0 +1,98 @@
+.reviews
+    padding: 40px 0 70px
+    &__title
+        font-style: Bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-slider
+        width: 100%
+        height: 100%
+        position: relative
+        border-radius: 8px
+        &__item
+            background-color: #ffffff
+            border-radius: 8px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 45px
+            max-width: 730px
+            margin: 45px auto 0
+            padding: 0 62px 30px
+            position: relative
+            &::before
+                content: ""
+                background-image: url(../img/quote-left.svg)
+                background-repeat: no-repeat
+                width: 70px
+                height: 47px
+                left: 62px
+                top: 13px
+                position: absolute
+                z-index: 100
+                color: #F2F2F2
+
+            &::after
+                content: ""
+                background-image: url(../img/right-left.svg)
+                background-repeat: no-repeat
+                width: 70px
+                height: 47px
+                right: 62px
+                top: 118px
+                position: absolute
+                z-index: 100
+
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 30px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-bottom: 9px
+        &__username
+            font-style: Bold
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+            margin-bottom: 10px
+        &__date
+            font-style: Regular
+            font-size: 10px
+            line-height: 13px
+            margin-bottom: 4px
+        &__rating
+            display: flex
+            align-items: center
+        &__text
+            font-style: Regular
+            font-size: 12px
+            line-height: 19px
+            width: 537px
+        &__button
+            position: absolute
+            top: 50%
+            width: 30px
+            height: 30px
+            border: none
+            z-index: 99
+            transform: translateY(-50%)
+            background-color: transparent
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            &__next
+                background-image: url(../img/next-butt.svg)
+                right: 0
+            &__prev
+                background-image: url(../img/prev-butt.svg)
+                left: 0
