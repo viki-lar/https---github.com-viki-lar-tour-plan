@@ -802,7 +802,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  min-width: 1440px;
   margin: auto;
   position: relative;
 }
@@ -875,13 +875,17 @@ template {
 
 .subscribe__button {
   position: absolute;
-  min-height: 45px;
+  min-width: 65px;
   top: 0;
   right: 0;
   height: 100%;
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 15px;
+  line-height: 100%;
 }
 
 .reviews {
