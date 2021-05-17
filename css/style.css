@@ -380,7 +380,7 @@ template {
 }
 
 .navbar__search {
-  margin-left: 108px;
+  margin-right: 108px;
 }
 
 .navbar__bottom {
@@ -802,7 +802,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 1440px;
+  max-width: 1900px;
   margin: auto;
   position: relative;
 }
@@ -898,7 +898,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin: 0 0 70px 0;
 }
 
 .reviews-slider {
@@ -1005,7 +1005,7 @@ template {
   font-style: Regular;
   font-size: 12px;
   line-height: 19px;
-  width: 537px;
+  max-width: 537px;
 }
 
 .reviews-slider__button {
@@ -1118,7 +1118,8 @@ template {
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .container,
+  .newsletter {
     max-width: 960px;
   }
   .hotel-slider {
@@ -1185,8 +1186,16 @@ template {
   .map {
     width: 340px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .newsletter {
+    max-width: 992px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1294,6 +1303,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    max-width: 576px;
+  }
   .newsletter-wrapper {
     max-width: 768px;
     width: 92%;
@@ -1307,6 +1319,11 @@ template {
   }
   .newsletter-title {
     padding-bottom: 37px;
+  }
+  .reviews-slider__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1336,6 +1353,7 @@ template {
   .card {
     width: 49%;
     height: 255px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1352,6 +1370,7 @@ template {
   .newsletter {
     padding-top: 76px;
     padding-bottom: 83px;
+    max-width: 480px;
   }
   .newsletter-title {
     font-size: 20px;

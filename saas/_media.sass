@@ -1,5 +1,6 @@
 @media ( max-width: 1200px  )
-    .container
+    .container,
+    .newsletter
         max-width: 960px
     .hotel
         &-slider
@@ -48,9 +49,15 @@
     .map
         width: 340px
     .reviews
+        &__title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
         &-slider
             &__item
                 max-width: 580px
+    .newsletter
+        max-width: 992px
     .activities
         &-wrapper
             flex-wrap: wrap
@@ -136,6 +143,7 @@
     .map
         width: 100%
     .newsletter
+        max-width: 576px
         &-wrapper
             max-width: 768px
             width: 92%
@@ -145,7 +153,12 @@
             padding-bottom: 37px
     .reviews
         &-slider
+            &__title
+                font-size: 18px
+                line-height: 23px
+                margin-bottom: 42px
             &__item
+
                 padding: 0 30px 30px
                 &::before
                 &::after
@@ -166,6 +179,7 @@
     .card
         width: 49%
         height: 255px
+        margin-bottom: 10px
 
 @media ( max-width: 576px )
     .logo
@@ -179,6 +193,7 @@
     .newsletter
         padding-top: 76px
         padding-bottom: 83px
+        max-width: 480px
         &-title
             font-size: 20px
             line-height: 25px
