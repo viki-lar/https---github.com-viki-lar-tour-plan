@@ -14,6 +14,10 @@
     .card
         width: 230px
         height: 230px
+
+    .footer
+        &__input
+            flex-basis: 100%
 @media ( max-width:992px )
     .container,
     .newsletter-wrapper
@@ -66,6 +70,38 @@
     .card
         width: 340px
         height: 230px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 40px
+        &__logo
+            grid-row: 1/2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1/2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2/3
+            grid-column: span 2
+        &__informations
+            grid-row: 2/3
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-row: 3
+                grid-column: span 5
+                margin-top: 0
+        &__contacts-form
+            grid-row: 4
+            grid-column: span 5
+            margin-top: 0
+        &__input
+            flex-basis: 49%
+
 @media(min-width: 992px)
     .search
         &__button
@@ -223,6 +259,9 @@
         width: 49%
         height: 255px
         margin-bottom: 10px
+    .footer
+        &__input
+            flex-basis: 100%
 
 @media ( max-width: 576px )
     .logo
@@ -248,3 +287,29 @@
         width: 100%
     .card
         width: 100%
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__informations
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+
+        &__contact-details
+            grid-row: 6
+            grid-column: 1
+        &__contacts-form
+            grid-row: 7
+            grid-column: 1
