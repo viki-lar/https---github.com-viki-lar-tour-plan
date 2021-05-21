@@ -101,12 +101,19 @@
             margin-top: 0
         &__input
             flex-basis: 49%
+    .modal
+        &__dialog
+            padding: 30px 50px
 
 @media(min-width: 992px)
     .search
         &__button
             &:hover
                 box-shadow: 2px 2px 2px 0 $primary
+    .subscribe
+        &__button
+            &:hover
+                opacity: .8
     .user
         &__name
             &:hover
@@ -129,6 +136,10 @@
         width: 92%
     body
         padding-top: 78px
+    .body
+        &__hidden
+            overflow: hidden
+
     .navbar
         &__mobile_fixed
             position: fixed
@@ -262,7 +273,18 @@
     .footer
         &__input
             flex-basis: 100%
-
+    .modal
+        &__dialog
+            padding: 20px 30px
+        &__message
+            max-height: 50px
+        &__button
+            min-width: 100%
+            min-height: 30px
+        &__info
+            font-size: 10px
+            line-height: 12px
+            margin-left: 0
 @media ( max-width: 576px )
     .logo
         width: 99px
@@ -313,3 +335,35 @@
         &__contacts-form
             grid-row: 7
             grid-column: 1
+    .modal
+
+        &__input
+            margin-bottom: 5px
+        &__message
+            margin-bottom: 5px
+        &__input
+            padding: 0 10px
+            height: 30px
+        &__message
+            padding: 0 10px
+
+@media ( max-width:380px )
+
+    .navbar
+        &__search
+            max-width: 250px
+            overflow: hidden
+    .modal
+        &__title
+            font-size: 12px
+            line-height: 18px
+
+        &__dialog
+            padding: 10px 20px
+        &__form
+            font-size: 10px
+        &__message
+            padding: 0 5px
+        &__input
+            padding: 0 5px
+            height: 20px
