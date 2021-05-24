@@ -199,8 +199,8 @@
             <div class="newsletter-title">subscribe to our
                 <h2 class="newsletter-title__strong">Newsletter</h2>
             </div>
-            <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe ">
+                <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required>
                 <button class="subscribe__button">
                     Send
                 </button>
@@ -438,9 +438,13 @@
                 <!-- /.footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class=" input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class=" input footer__input" placeholder="Phone Number*" name="phone">
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-block">
+                            <div class="footer__input-group"><input type="text" class=" input footer__input"
+                                    placeholder="Your Full Name*" name="name" required minlength="2"></div>
+                            <div class="footer__input-group"><input type="tel" datatarget="phone" class=" input
+                                footer__input" placeholder="Phone Number*" name="phone" required></div>
+                        </div>
                         <textarea class="footer__message" cols="30" rows="10" placeholder="Message"
                             name="message"></textarea>
                         <button class="button footer__button">Send</button>
@@ -463,10 +467,13 @@
             </a>
             <div class="modal__contacts-form">
                 <h3 class="modal__title">Booking</h3>
-                <form action="send.php" method="POST" class="modal__form">
-                    <input type="text" class=" input modal__input" placeholder="Your Full Name*" name="name">
-                    <input type="text" class=" input modal__input" placeholder="Phone Number*" name="phone">
-                    <input type="text" class="input modal__input modal__input-mail" placeholder="E-mail*">
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class=" input modal__input" placeholder="Your Full Name*" name="name" required
+                        minlength="2">
+                    <input type="tel" datatarget="phone" class=" input modal__input" placeholder="Phone Number*"
+                        name="phone" required>
+                    <input type="email" datatarget="email" class="input modal__input modal__input-mail"
+                        placeholder="E-mail*" required>
                     <textarea class="modal__message" cols="30" rows="10" placeholder="Message"
                         name="message"></textarea>
                     <button class="button modal__button">Send</button>
@@ -482,6 +489,8 @@
     <!-- /.modal -->
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
