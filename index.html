@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <header class="navbar navbar__mobile_fixed">
+    <header class="navbar navbar-mobile-fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="https://vlarionova.ru/tour-plan/" class="logo">
                     <img src="./img/horizontal-logo.svg" alt="logo:Best Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search navbar__search-mobile-hidden">
@@ -184,7 +184,7 @@
 
                     <div class="map"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372593.602123192!2d100.74816275311755!3d12.403651366567123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1620755364075!5m2!1sru!2sru"
-                            width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            width="348" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <!-- /.map -->
                 </div>
@@ -197,7 +197,7 @@
     <section class="newsletter">
         <div class="newsletter-wrapper">
             <div class="newsletter-title">subscribe to our
-                <span class="newsletter-title__strong">Newsletter</span>
+                <h2 class="newsletter-title__strong">Newsletter</h2>
             </div>
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
                 <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
@@ -206,7 +206,7 @@
                 </button>
             </form>
         </div>
-        </div>
+
     </section>
     <!-- /.newsletter -->
     <section class="reviews">
@@ -311,7 +311,7 @@
 
 
         </div>
-        </div>
+
         <!-- /.container -->
     </section>
     <!-- /.reviews -->
@@ -349,7 +349,8 @@
     <div class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="./img/vertical-logo.svg" alt="Best Tour Plan" class="logo footer__logo">
+                <a href="https://vlarionova.ru/tour-plan/" class="footer__logo">
+                    <img src="./img/vertical-logo.svg" alt="Best Tour Plan" class="logo footer__logo"></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">
                         ALL CATEGORIES
@@ -414,12 +415,14 @@
                             <a href="#" class="footer__link">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                                 States</a>
                         </li>
-                        <li class="footer__item  footer__item--mb2">
+                        <li class="footer__item  footer__item--mb2 footer__item--mb2--line">
                             <div class="footer__icon-wrapper"><img src="./img/phone-icon.svg" alt="phone-icoon"
                                     class="footer__icon"> </div>
-                            <a href="#" class="footer__link">Tel (business hours) : 269 1500
-                                <br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
+                            <a href="tel:269 1500" class="footer__link">Tel (business hours) : 269 1500</a>
+                            <a href="tel:52-56-61-38" class="footer__link footer__link-phone ">Tel (hotline) Monday -
+                                Saturday: 52-56-61-38
+                                (08:00 am – 20:00 pm)</a>
+                            <a href="tel:52-56-61-38" class="footer__link footer__link-phone">
                                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                             </a>
                         </li>
@@ -427,7 +430,8 @@
                             <div class="footer__icon-wrapper">
                                 <img src="./img/e-mail.svg" alt="e-mail-icon" class="footer__icon">
                             </div>
-                            <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                            <a href="mailto:cherly.lawson@example.com"
+                                class="footer__link">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
@@ -462,7 +466,7 @@
                 <form action="send.php" method="POST" class="modal__form">
                     <input type="text" class=" input modal__input" placeholder="Your Full Name*" name="name">
                     <input type="text" class=" input modal__input" placeholder="Phone Number*" name="phone">
-                    <input type="text" class=" input modal__input" placeholder="E-mail*">
+                    <input type="text" class="input modal__input modal__input-mail" placeholder="E-mail*">
                     <textarea class="modal__message" cols="30" rows="10" placeholder="Message"
                         name="message"></textarea>
                     <button class="button modal__button">Send</button>

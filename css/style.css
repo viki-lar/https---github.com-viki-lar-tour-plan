@@ -18,18 +18,12 @@ img {
   max-width: 100%;
 }
 
-.input {
+input {
   background-color: #ffffff;
   border: none;
   padding: 0 23px;
   border-radius: 4px;
   height: 50px;
-}
-
-.message {
-  background-color: #ffffff;
-  border: none;
-  padding: 18px 23px;
 }
 
 .button {
@@ -814,7 +808,7 @@ template {
 }
 
 .map {
-  width: 347px;
+  width: 100%;
   height: 213px;
   background-color: black;
   border-radius: 10px;
@@ -959,6 +953,7 @@ template {
   line-height: 45px;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subscribe {
@@ -1234,8 +1229,8 @@ template {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20%, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(20%, 1fr));
+  -ms-grid-columns: 21% 21% 26% 17%;
+      grid-template-columns: 21% 21% 26% 17%;
   grid-column-gap: 52px;
   grid-row-gap: 24px;
 }
@@ -1350,6 +1345,20 @@ template {
 
 .footer__item--mb2 {
   margin-bottom: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__item--mb2--line {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__icon-wrapper {
@@ -1359,6 +1368,10 @@ template {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__link-phone {
+  margin-left: 40px;
 }
 
 .footer__text {
@@ -1381,6 +1394,9 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 22px;
+  background-color: #ffffff;
+  border: none;
+  padding: 18px 23px;
 }
 
 .footer__button {
@@ -1548,13 +1564,13 @@ template {
   }
   .modal__dialog {
     padding: 30px 50px;
+    max-width: 500px;
   }
 }
 
 @media (min-width: 992px) {
   .search__button:hover {
-    -webkit-box-shadow: 2px 2px 2px 0 #EC1F46;
-            box-shadow: 2px 2px 2px 0 #EC1F46;
+    opacity: .8;
   }
   .subscribe__button:hover {
     opacity: .8;
@@ -1567,6 +1583,21 @@ template {
   }
   .breadcrumb-list__link:hover {
     text-decoration: underline;
+  }
+  .booking__button:hover {
+    opacity: .8;
+  }
+  .card__button:hover {
+    opacity: .8;
+  }
+  .footer__button:hover {
+    opacity: .8;
+  }
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+  .modal__button:hover {
+    opacity: .8;
   }
 }
 
@@ -1581,7 +1612,7 @@ template {
   .body__hidden {
     overflow: hidden;
   }
-  .navbar__mobile_fixed {
+  .navbar-mobile-fixed {
     position: fixed;
     left: 0;
     right: 0;
@@ -1773,6 +1804,7 @@ template {
   }
   .modal__dialog {
     padding: 20px 30px;
+    width: 80%;
   }
   .modal__message {
     max-height: 50px;
@@ -1817,9 +1849,13 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-top: 60px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-row-gap: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1899,6 +1935,55 @@ template {
   .modal__input {
     padding: 0 5px;
     height: 20px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: 98%;
+        grid-template-columns: 98%;
+    grid-row-gap: 30px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .modal__dialog {
+    padding: 20px 40px;
+    max-width: 80%;
+  }
+  .modal__input {
+    width: 49%;
+    margin-bottom: 5px;
+  }
+  .modal__input-mail {
+    width: 99%;
+  }
+  .modal__message {
+    width: 99%;
+    min-height: 50px;
+  }
+  .navbar__user {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .navbar-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar-menu-mobile-visible {
+    display: block;
+  }
+  .navbar-menu__item-mobile-visible {
+    width: 50%;
+  }
+  .user__avatar {
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
