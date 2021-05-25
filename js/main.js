@@ -93,7 +93,7 @@ $(document).ready(function () {
                 },
                 phone: {
                     required: "Please specify your phone",
-                    minlength: "At least 11 characters required"
+                    minlength: "At least 18 characters required"
                 },
             },
         });
