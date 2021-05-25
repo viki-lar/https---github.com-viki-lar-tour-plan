@@ -94,15 +94,17 @@ $(document).ready(function () {
                 phone: {
                     required: "Please specify your phone",
                     minlength: "At least 11 characters required"
-                }
+                },
             },
         });
     });
-    //подключение маски для телефона
-    $('[datatarget="phone"]').mask('+7 (000) 000-00-00')
-    //подключение маски для почты
-    $('[datatarget="email"]').inputmask("email")
-
-
     AOS.init();
+
+    //подключение маски для телефона
+    $('[datatarget="phone"]').mask('+7 (000) 000-00-00');
+    //подключение маски для почты
+    $('[datatarget="email"]').inputmask("email");
+
+
+
 });
