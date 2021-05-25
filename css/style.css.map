@@ -10,7 +10,7 @@
         "../saas/blocks/_breadcrumb.sass",
         "../saas/blocks/_hotel.sass",
         "../saas/blocks/_modal.sass",
-        "../saas/blocks/_packages.sass",
+        "../saas/blocks/_otherpackages.sass",
         "../saas/blocks/_newsletter.sass",
         "../saas/blocks/_reviews.sass",
         "../saas/blocks/_activities.sass",
