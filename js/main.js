@@ -92,7 +92,8 @@ $(document).ready(function () {
                     email: "Your email address must be in the format of name@domain.com"
                 },
                 phone: {
-                    required: "Please specify your phone"
+                    required: "Please specify your phone",
+                    minlength: "At least 11 characters required"
                 }
             },
         });
@@ -103,4 +104,5 @@ $(document).ready(function () {
     $('[datatarget="email"]').inputmask("email")
 
 
+    AOS.init();
 });

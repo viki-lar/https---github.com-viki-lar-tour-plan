@@ -93,34 +93,34 @@
         </div>
         <!-- /.container -->
     </nav>
-    <section class="hotel">
+    <section class="thanks">
         <div class="container">
 
-            <div class="hotel-info">
-                <div class="hotel-info__text">
-                    <div class="hotel-wrapper">
+            <div class="thanks-info">
+                <div class="thanks-info__text">
+                    <div class="thanks-wrapper">
 
-                        <h1 class="hotel-info__name hotel-name">Спасибо!</h1>
+                        <h1 class="thanks-info__name thanks-title">Спасибо!</h1>
 
                     </div>
-                    <p class="hotel-description hotel-info__description">Ваше сообщение отправлено
+                    <p class="thanks-description thanks-info__description">Ваше сообщение отправлено
                     </p>
-                    <a href="https://vlarionova.ru/tour-plan/">Назад</a>
+                    <a class="thanks__link" href=https://vlarionova.ru/tour-plan>Назад</a>
                 </div>
-                <!-- /.hotel-info__name -->
+                <!-- /.thanks-info__name -->
 
-                <!-- /.hotel-info__right -->
+                <!-- /.thanks-info__right -->
             </div>
 
         </div>
     </section>
-    <!-- /.hotel -->
+    <!-- /.thanks -->
 
-    <!-- /.activities -->
     <div class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="./img/vertical-logo.svg" alt="Best Tour Plan" class="logo footer__logo">
+                <a href="https://vlarionova.ru/tour-plan/" class="footer__logo">
+                    <img src="./img/vertical-logo.svg" alt="Best Tour Plan" class="logo footer__logo"></a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">
                         ALL CATEGORIES
@@ -162,7 +162,7 @@
                     </div>
 
                 </div>
-                <div class="footer__list">
+                <div class="footer__list footer__legal">
                     <h3 class="footer__title">
                         LEGAL INFORMATION
                     </h3>
@@ -185,12 +185,14 @@
                             <a href="#" class="footer__link">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                                 States</a>
                         </li>
-                        <li class="footer__item  footer__item--mb2">
+                        <li class="footer__item  footer__item--mb2 footer__item--mb2--line">
                             <div class="footer__icon-wrapper"><img src="./img/phone-icon.svg" alt="phone-icoon"
                                     class="footer__icon"> </div>
-                            <a href="#" class="footer__link">Tel (business hours) : 269 1500
-                                <br>
-                                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
+                            <a href="tel:269 1500" class="footer__link">Tel (business hours) : 269 1500</a>
+                            <a href="tel:52-56-61-38" class="footer__link footer__link-phone ">Tel (hotline) Monday -
+                                Saturday: 52-56-61-38
+                                (08:00 am – 20:00 pm)</a>
+                            <a href="tel:52-56-61-38" class="footer__link footer__link-phone">
                                 Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
                             </a>
                         </li>
@@ -198,17 +200,22 @@
                             <div class="footer__icon-wrapper">
                                 <img src="./img/e-mail.svg" alt="e-mail-icon" class="footer__icon">
                             </div>
-                            <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                            <a href="mailto:cherly.lawson@example.com"
+                                class="footer__link">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
                 <div class="footer__contacts-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class=" input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class=" input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__message" cols="30" rows="10" placeholder="message"
+                    <form action="send.php" method="POST" class="footer__form form">
+                        <div class="footer__input-block">
+                            <div class="footer__input-group"><input type="text" class=" input footer__input"
+                                    placeholder="Your Full Name*" name="name" required minlength="2"></div>
+                            <div class="footer__input-group"><input type="tel" datatarget="phone" class=" input
+                                footer__input" placeholder="Phone Number*" name="phone" required></div>
+                        </div>
+                        <textarea class="footer__message" cols="30" rows="10" placeholder="Message"
                             name="message"></textarea>
                         <button class="button footer__button">Send</button>
                         <span class="footer__info">* Required Fields</span>
@@ -221,7 +228,39 @@
         </div>
         <!-- /.container -->
     </div>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img data-togle=close__modal src="./img/close.svg" alt="icon:close">
+            </a>
+            <div class="modal__contacts-form">
+                <h3 class="modal__title">Booking</h3>
+                <form action="send.php" method="POST" class="modal__form form">
+                    <input type="text" class=" input modal__input" placeholder="Your Full Name*" name="name" required
+                        minlength="2">
+                    <input type="tel" datatarget="phone" class=" input modal__input" placeholder="Phone Number*"
+                        name="phone" required>
+                    <input type="email" datatarget="email" class="input modal__input modal__input-mail"
+                        placeholder="E-mail*" required>
+                    <textarea class="modal__message" cols="30" rows="10" placeholder="Message"
+                        name="message"></textarea>
+                    <button class="button modal__button">Send</button>
+                    <span class="modal__info">* Required Fields</span>
+
+
+                </form>
+            </div>
+
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
