@@ -101,9 +101,9 @@ $(document).ready(function () {
     AOS.init();
 
     //подключение маски для телефона
-    $('[datatarget="phone"]').mask('+7 (000) 000-00-00');
+    $('[type="tel"]').mask('+7 (000) 000-00-00');
     //подключение маски для почты
-    $('[datatarget="email"]').inputmask("email");
+    $('[type="email"]').inputmask("email");
 
 
 
