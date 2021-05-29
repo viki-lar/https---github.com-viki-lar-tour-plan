@@ -96,50 +96,84 @@
     .newsletter
 
     .activities
+        padding: 60px 0 48px 0
+        &__title
+            margin-top: 0px
         &-wrapper
             flex-wrap: wrap
         &__card
             margin-bottom: 20px
     .card
         width: 340px
-        height: 230px
+        height: 255px
+
+        &__title
+            width: 80%
+            margin-left: 0
+
     .footer
+        padding-top: 70px
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
-            grid-row-gap: 40px
+            grid-row-gap: 45px
+            grid-column-gap: 0
         &__logo
             grid-row: 1/2
             grid-column: span 2
         &__social
             &-network
                 grid-row: 1/2
-                grid-column: span 4
+                grid-column: 3/6
+                margin-left: -45px
                 align-self: center
+                margin-top: 15px
         &__categories
             grid-row: 2/3
             grid-column: span 2
+            margin-top: 5px
         &__informations
             grid-row: 2/3
             grid-column: span 2
+            margin-left: -25px
+            margin-top: 5px
+
         &__legal
             grid-column: span 2
+            margin-left: 45px
+            margin-top: 5px
+
         &__contact
             &-details
                 grid-row: 3
                 grid-column: span 5
-                margin-top: 0
+                margin-top: 20px
         &__contacts-form
             grid-row: 4
             grid-column: span 5
             margin-top: 0
+            margin-right: 40px
         &__input
             &-group
                 flex-basis: 48%
+        &__block
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            width: 100%
+    .logo__footer
+        width: 60%
+
     .modal
         &__dialog
             padding: 30px 50px
             max-width: 500px
 
+    .footer-bottom
+        &-wrapper
+            padding: 40px 0 33px 0
+        &__links
+            margin-left: 0px
 @media(min-width: 992px)
     .search
         &__button
@@ -195,7 +229,7 @@
             &:hover
                 text-decoration: underline
 
-@media ( max-width:768px )
+@media ( max-width:767px )
     .container
         max-width: 576px
         width: 92%
@@ -280,7 +314,7 @@
             &__text
                 width: 100%
             &__name
-                margin-top: 10px
+                margin-top: 0px
 
             &__offer
                 order: -1
@@ -329,6 +363,11 @@
             align-items: flex-start
         &-title
             padding-bottom: 37px
+    .activities
+        padding: 40px 0 98px 0
+        &__title
+            margin-top: 0px
+
     .reviews
         &__title
             font-size: 18px
@@ -352,19 +391,20 @@
                     left: 50%
                     margin-left: -65px
                     transform: translate(-50%, 0)
-    .activities
-        padding-top: 40px
-        padding-bottom: 60px
-    .card
-        width: 49%
-        height: 255px
-        margin-bottom: 10px
+
     .footer
+
+        &-wrapper
+            grid-row-gap: 20px
+            grid-column-gap: 0px
+
         &__input
             &-block
                 flex-wrap: wrap
             &-group
                 flex-basis: 100%
+    .logo__footer
+        width: 60%
     .modal
         &__dialog
             padding: 20px 30px
@@ -416,15 +456,18 @@
             &-network
                 grid-row: 2
                 grid-column: 1
+                margin-left: 0
         &__informations
-            grid-row: 3
-            grid-column: 1
-        &__categories
             grid-row: 4
             grid-column: 1
-        &__legal
+            margin-left: 0
+        &__categories
             grid-row: 5
             grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+            margin-left: 0
 
         &__contact-details
             grid-row: 6
@@ -459,6 +502,12 @@
                 font-size: 12px
                 line-height: 16px
                 padding: 5px 10px
+    .footer-bottom
+        &-wrapper
+            flex-direction: column
+            padding: 40px 0 33px 0
+        &__links
+            margin-left: 0px
 @media ( max-width:380px )
 
     .navbar
@@ -479,13 +528,81 @@
         &__input
             padding: 0 5px
             height: 20px
+    .breadcrumb
+        &-list
+
+            padding: 10px 0px
+    .hotel
+        &__slider
+            margin-bottom: 20px
+            margin-top: 25px
+        &-slider
+            height: 179px
+        &-info__offer
+            margin-bottom: 10px
+    .activities
+        padding-top: 40px
+        padding-bottom: 45px
+        &__title
+            font-size: 18px
+            line-height: 23px
+            margin-bottom: 36px
+            margin-top: 20px
+        &__card
+            margin-bottom: 20px
+    .card
+        &__title
+            width: 90%
+            margin-left: 0
+
+    .reviews
+        &__title
+            width: 70%
+            margin: auto
+            margin-bottom: 40px
+        &-slider
+            &__button
+                &__next
+                    right: 50%
+                    margin-right: -85px
+                    transform: translate(50%, 0)
+                &__prev
+                    left: 50%
+                    margin-left: -85px
+                    transform: translate(-50%, 0)
+
     .footer
+        padding-top: 65px
         &-wrapper
             grid-template-columns: 98%
             grid-row-gap: 30px
         &__link
             &-icon
                 margin-left: 3px
+        &__social
+            &-network
+                display: flex
+                flex-wrap: wrap
+                margin-top: 10px
+            &-links
+                width: 100%
+                margin-top: 30px
+        &__contact-details
+            padding-top: 25px
+        &__contacts-title
+            margin-bottom: 5px
+        &__text
+            margin-top: 25px
+        &__info
+            width: 100%
+
+        &__block
+            display: flex
+            flex-direction: column-reverse
+            padding-top: 5px
+        &__button
+            font-size: 12px
+            line-height: 15px
 
 @media (max-width: 576px) and (orientation: landscape)
     .modal
