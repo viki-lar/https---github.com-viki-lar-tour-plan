@@ -30,6 +30,7 @@ $(document).ready(function () {
         loop: true,
 
 
+
         // Navigation arrows
         navigation: {
             nextEl: '.reviews-slider__button__next',
@@ -103,7 +104,7 @@ $(document).ready(function () {
     //подключение маски для телефона
     $('[type="tel"]').mask('+7 (000) 000-00-00');
     //подключение маски для почты
-    $('[type="email"]').inputmask("email");
+
 
 
 

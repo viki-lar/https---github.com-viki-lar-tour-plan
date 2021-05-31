@@ -1,5 +1,6 @@
 .reviews
     padding: 40px 0 25px
+    margin-bottom: 15px
     &__title
         font-style: Bold
         font-size: 36px
@@ -21,11 +22,11 @@
             margin-top: 45px
             max-width: 730px
             margin: 45px auto 0
-            padding: 0 62px 30px
+            padding: 0 62px 10px
             position: relative
             &::before
                 content: ""
-                background-image: url(../img/quote-left.svg)
+                background-image: url(./img/quote-left.svg)
                 background-repeat: no-repeat
                 width: 70px
                 height: 47px
@@ -37,7 +38,7 @@
 
             &::after
                 content: ""
-                background-image: url(../img/right-left.svg)
+                background-image: url(./img/right-left.svg)
                 background-repeat: no-repeat
                 width: 70px
                 height: 47px
@@ -78,9 +79,12 @@
             line-height: 19px
             max-width: 537px
 
+            overflow-y: auto
+            max-height: 115px
+
         &__button
             position: absolute
-            top: 50%
+            top: 45%
             width: 30px
             height: 30px
             border: none
@@ -91,9 +95,10 @@
             background-repeat: no-repeat
             background-position: center
             background-size: 10px
+            margin-bottom: 30px
             &__next
                 background-image: url(../img/next-butt.svg)
-                right: 0
+                right: 10px
             &__prev
                 background-image: url(../img/prev-butt.svg)
-                left: 0
+                left: 10px
