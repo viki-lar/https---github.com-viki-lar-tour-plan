@@ -5,7 +5,7 @@
     padding-bottom: 46px
     &-wrapper
         display: grid
-        grid-template-columns: 21% 21% 26% 17%
+        grid-template-columns: 21% 21% 26% 21%
         grid-column-gap: 52px
         grid-row-gap: 24px
     &__logo
@@ -17,6 +17,7 @@
         grid-row: 1/3
     &__informations
         grid-row: 1/2
+
     &__social
         &__links
             display: flex
@@ -31,10 +32,10 @@
 
     &__contact-details
         grid-column: 1/3
-        margin-top: 65px
+        margin-top: 60px
     &__contacts-form
         grid-column: 3/5
-        margin-top: 65px
+        margin-top: 50px
         grid-column: span 2
     &__form
         display: flex
@@ -90,7 +91,7 @@
         margin-bottom: 22px
 
     &__input
-        width: 100%
+        width: 90%
         &-block
             width: 100%
             display: flex
@@ -100,12 +101,17 @@
             flex-basis: 48%
     &__message
         border-radius: 4px
-        flex-basis: 100%
+        flex-basis: 95%
         margin-top: 15px
         background-color: #ffffff
         border: none
         max-height: 123px
         padding: 18px 23px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 95%
     &__button
         min-width: 150px
         min-height: 50px
@@ -114,6 +120,10 @@
         border: none
         border-radius: 4px
         margin-top: 22px
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
 
     &__info
         color: $footer-text-color
@@ -121,20 +131,23 @@
         font-style: Bold
         font-size: 12px
         line-height: 15px
-.footer-bottom
+.info-bottom
     background-color: $dark
     color: $light
-    &-wrapper
+    margin-top: 45px
+    &__wrapper
         display: flex
         justify-content: space-between
         padding: 56px 0 46px 0
     &__links
         margin-left: 400px
+
         display: flex
         justify-content: space-between
+        min-width: 283px
     &__link
         text-decoration: none
-        color: inherit
+        color: $light
         font-size: 12px
         line-height: 15px
         font-style: normal

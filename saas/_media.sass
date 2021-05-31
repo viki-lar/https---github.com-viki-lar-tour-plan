@@ -35,6 +35,60 @@
         &__input
             &-group
                 flex-basis: 48%
+    .footer
+        padding-top: 70px
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 45px
+            grid-column-gap: 0
+        &__logo
+            grid-row: 1/2
+            grid-column: span 2
+            &-vert
+                width: 60%
+        &__social
+            &-network
+                grid-row: 1/2
+                grid-column: 3/6
+                margin-left: -45px
+                align-self: center
+                margin-top: 15px
+        &__categories
+            grid-row: 2/3
+            grid-column: span 2
+            margin-top: 5px
+        &__informations
+            grid-row: 2/3
+            grid-column: span 2
+            margin-left: -25px
+            margin-top: 5px
+
+        &__legal
+            grid-column: span 2
+            margin-left: 45px
+            margin-top: 5px
+            &-title
+                margin-right: -15px
+
+        &__contact
+            &-details
+                grid-row: 3
+                grid-column: span 5
+                margin-top: 20px
+        &__contacts-form
+            grid-row: 4
+            grid-column: span 5
+            margin-top: 0
+            margin-right: 40px
+        &__input
+            &-group
+                flex-basis: 48%
+        &__block
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            width: 95%
 
     .modal
         &__input
@@ -120,6 +174,8 @@
         &__logo
             grid-row: 1/2
             grid-column: span 2
+            &-vert
+                width: 60%
         &__social
             &-network
                 grid-row: 1/2
@@ -141,6 +197,8 @@
             grid-column: span 2
             margin-left: 45px
             margin-top: 5px
+            &-title
+                margin-right: -15px
 
         &__contact
             &-details
@@ -160,17 +218,15 @@
             flex-direction: row
             justify-content: space-between
             align-items: center
-            width: 100%
-    .logo__footer
-        width: 60%
+            width: 95%
 
     .modal
         &__dialog
             padding: 30px 50px
             max-width: 500px
 
-    .footer-bottom
-        &-wrapper
+    .info-bottom
+        &__wrapper
             padding: 40px 0 33px 0
         &__links
             margin-left: 0px
@@ -228,6 +284,11 @@
         &__link
             &:hover
                 text-decoration: underline
+    .footer
+        &__link-icon
+            &:hover
+                box-shadow: inset 0px 0px 20px 20px white
+                border-radius: 50%
 
 @media ( max-width:767px )
     .container
@@ -246,6 +307,7 @@
             right: 0
             top: 0
             z-index: 99
+
         &__search
             &-mobile
                 margin-bottom: 39px
@@ -271,6 +333,8 @@
             padding-top: 30px
             &-visible
                 display: block
+                overflow-y: auto
+                height: 300px
         &-menu
             flex-direction: column
             &__item
@@ -367,7 +431,9 @@
         padding: 40px 0 98px 0
         &__title
             margin-top: 0px
-
+    .card
+        width: 100%
+        height: 350px
     .reviews
         &__title
             font-size: 18px
@@ -403,8 +469,51 @@
                 flex-wrap: wrap
             &-group
                 flex-basis: 100%
-    .logo__footer
-        width: 60%
+
+    .footer
+
+        padding-top: 60px
+        &-wrapper
+            grid-template-columns: 1fr
+            grid-row-gap: 30px
+
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+                margin-left: 0
+        &__legal
+            &-title
+                margin-right: 0
+                width: 100%
+        &__informations
+            grid-row: 4
+            grid-column: 1
+            margin-left: 0
+        &__categories
+            grid-row: 5
+            grid-column: 1
+        &__legal
+            grid-row: 3
+            grid-column: 1
+            margin-left: 0
+
+        &__contact-details
+            grid-row: 6
+            grid-column: 1
+
+        &__contacts-form
+            grid-row: 7
+            grid-column: 1
+        &__message
+
+            flex-basis: 90%
+        &__block
+
+            width: 90%
     .modal
         &__dialog
             padding: 20px 30px
@@ -442,6 +551,7 @@
         width: 100%
     .card
         width: 100%
+        height: 255px
     .footer
 
         padding-top: 60px
@@ -457,6 +567,9 @@
                 grid-row: 2
                 grid-column: 1
                 margin-left: 0
+        &__legal
+            &-title
+                margin-right: -25px
         &__informations
             grid-row: 4
             grid-column: 1
@@ -502,8 +615,8 @@
                 font-size: 12px
                 line-height: 16px
                 padding: 5px 10px
-    .footer-bottom
-        &-wrapper
+    .info-bottom
+        &__wrapper
             flex-direction: column
             padding: 40px 0 33px 0
         &__links
@@ -533,6 +646,7 @@
 
             padding: 10px 0px
     .hotel
+        padding-bottom: 5px
         &__slider
             margin-bottom: 20px
             margin-top: 25px
@@ -540,6 +654,14 @@
             height: 179px
         &-info__offer
             margin-bottom: 10px
+        &__rightside
+            min-height: 430px
+    .booking
+        max-height: 205px
+    .map
+        width: 280px
+        height: 172px
+        margin-bottom: 30px
     .activities
         padding-top: 40px
         padding-bottom: 45px
@@ -587,30 +709,63 @@
             &-links
                 width: 100%
                 margin-top: 30px
+
         &__contact-details
-            padding-top: 25px
+            padding-top: 5px
+            margin-top: 0px
         &__contacts-title
             margin-bottom: 5px
         &__text
             margin-top: 25px
         &__info
             width: 100%
+        &__input
+            flex-basis: 100%
+            &-block
+                flex-basis: 100%
+            &-group
+                min-width: 280px
+        &__message
+            width: 100%
+            min-width: 252px
 
         &__block
             display: flex
             flex-direction: column-reverse
             padding-top: 5px
+            justify-content: start
+            text-align: left
         &__button
             font-size: 12px
             line-height: 15px
+            flex-basis: 100%
+            margin-right: 80px
+    .info-bottom__wrapper
+        padding-top: 30px
 
-@media (max-width: 576px) and (orientation: landscape)
+@media (max-width: 590px) and (orientation: landscape)
+
     .modal
+        overflow-y: auto
+        height: 300px
+        &__overlay
+            position: relative
+            left: 20
+            top: 20
+            right: 20
+            bottom: 20
+            overflow-y: auto
+        &__dialog
+            position: fixed
+            overflow-y: auto
+            &-visible
+                overflow-y: auto
+                height: 300px
         &__dialog
             padding: 20px 40px
             max-width: 80%
         &__input
-            width: 49%
+            width: 100%
             margin-bottom: 5px
             &-mail
                 width: 99%
@@ -618,15 +773,14 @@
             width: 99%
             min-height: 50px
     .navbar
+
         &__user
             flex-direction: row
             justify-content: start
 
-        &-menu
-            flex-direction: row
-            flex-wrap: wrap
-
             &-mobile
+                &-fixed
+                    overflow: scroll
                 &-visible
                     display: block
 
